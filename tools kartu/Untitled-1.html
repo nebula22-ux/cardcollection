@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Kartu Shii</title>
+    <style>
+        /* Mengatur dasar halaman */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9; /* Warna latar belakang lembut */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Bagian Profil / Header (Foto dan Nama Toko) */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .profile-header h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .profile-header p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        /* Wadah untuk kartu-kartu */
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 400px; /* Maksimal lebar untuk tampilan HP yang rapi */
+        }
+
+        /* Desain tiap kartu */
+        .item-card {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            color: #333;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Efek melayang saat kartu disentuh/di-hover */
+        .item-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Ikon kotak di dalam kartu */
+        .item-icon {
+            background: linear-gradient(135deg, #007bff, #00d2ff);
+            color: white;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Teks di dalam kartu */
+        .item-details {
+            flex: 1;
+            margin-left: 15px;
+        }
+
+        .item-details h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .item-details p {
+            font-size: 13px;
+            color: #95a5a6;
+        }
+
+        /* Tanda panah di kanan kartu */
+        .arrow {
+            color: #bdc3c7;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-header">
+        <img src="https://via.placeholder.com/100" alt="Logo Toko">
+        <h1>Nama Toko Kamu</h1>
+        <p>Pusat Voucher & Layanan Digital</p>
+    </div>
+
+    <div class="card-container">
+        
+        <a href="#" class="item-card">
+            <div class="item-icon">GAME</div>
+            <div class="item-details">
+                <h3>Top Up Game A</h3>
+                <p>Proses 1 Detik, Aman & Terpercaya</p>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <a href="#" class="item-card">
+            <div class="item-icon">VCR</div>
+            <div class="item-details">
+                <h3>Voucher Belanja</h3>
+                <p>Promo Diskon 10% Hari Ini</p>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+        <a href="#" class="item-card">
+            <div class="item-icon">APP</div>
+            <div class="item-details">
+                <h3>Aplikasi Premium</h3>
+                <p>Langganan Bulanan</p>
+            </div>
+            <div class="arrow">›</div>
+        </a>
+
+    </div>
+
+</body>
+</html>
